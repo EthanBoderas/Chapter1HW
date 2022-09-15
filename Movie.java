@@ -24,20 +24,29 @@ public class Movie {
     private int release;
     private String director;
     private String leading;
+
+
+    public Movie(){
+        this("Minions", 2022, "Ethan Boderas", "Anthony Wallace");
+    }
     
-    
-    public void Movie(String name,String year,String direct,String lead){
+    public  Movie(String name, int year, String direct, String lead){
         title = name;
         release = year;
         director = direct;
         leading = lead;
     }
     
-    public void toString(){
-        System.out.println("Title of a movie: "+ title);
-        System.out.println("Year of release: "+ release);
-        System.out.println("Name of a director: "+ director);
-        System.out.println("Name of the leading role actor or actress: "+ leading);
+    public String toString(){
+//        System.out.println("Title of a movie: "+ title);
+//        System.out.println("Year of release: "+ release);
+//        System.out.println("Name of a director: "+ director);
+//        System.out.println("Name of the leading role actor or actress: "+ leading);
+
+        return "Title of a movie: "+ title + "\nYear of release: "+ release +
+                "\nName " +
+                "of a director: "+ director + "\nName of the leading role actor or" +
+                " actress: "+ leading;
     }
     
     //Setters
